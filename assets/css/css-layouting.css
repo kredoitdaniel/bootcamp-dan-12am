@@ -1,0 +1,198 @@
+/* Presets */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+.nav {
+    border: 5px solid red;
+    width: 85%;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+.nav h1 a {
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: grey;
+    margin-top: 7px;
+}
+
+.nav ul {
+    /* border: 3px dashed darkgoldenrod; */
+    float: right;
+    margin: 1em auto;
+}
+
+.nav ul li {
+    /* border: 3px dashed blue; */
+    display: inline;
+    /* margin-left: 30px; */
+    margin-left: 1em;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 200px;
+}
+/* display
+    inline = accept margin and padding but horizontally or right and left only
+*/
+/* .nav ul li a {
+    border: 3px dashed darkgoldenrod;
+} */
+
+
+
+/* Section */
+.section {
+    border: 5px solid red;
+    overflow: auto;
+}
+
+#toyota {
+    background-image: url(../images/toyotacar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#suzuki {
+    background-image: url(../images/suzukicar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-text {
+    border: 3px dashed darkgreen;
+    height: 500px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+/* display
+    inline 
+        - accept padding all sides
+        - accept margin but right and left only
+
+    block
+        - accept padding all sides
+        - accept margin all sides
+
+    inline-block
+        - combine all properties of inline and block
+*/
+
+.section-text a {
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, .5);
+    color: white;
+    padding: 1em;
+    font-weight: bold;
+    margin-top: 1px;
+    /* margin-bottom: 50px; */
+    display: inline-block;
+}
+
+
+/* CSS Position */
+
+/* static
+    - default position
+    - fixed
+*/
+.static {
+    background-color: red;
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    left: 100px; /* not supported */
+}
+
+
+/* relative */
+.relative1 {
+    background-color: yellow;
+    height: 300px;
+    width: 45%;
+    position: relative;
+    left: 4%;
+}
+
+.relative2 {
+    background-color: darkmagenta;
+    height: 300px;
+    width: 45%;
+    position: relative;
+    bottom: 300px;
+    left: 51%;
+}
+
+
+/* absolute no parent 
+    will roam around inside of the body
+*/
+.absolute1 {
+    background-color: aqua;
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: -225px;
+}
+
+/* absolute with parent */
+.parent-absolute2 {
+    background-color: darkgreen;
+    height: 300px;
+    width: 45%;
+    position: relative;
+}
+
+.child-absolute2 {
+    background-color: orangered;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* fixed */
+.fixed {
+    background-color: chocolate;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+}
+
+
+/* z-index */
+.relative2 {
+    z-index: 1;
+}
+
+.fixed {
+    z-index: 2;
+}
+
+.absolute1 {
+    z-index: 3;
+}
